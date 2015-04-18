@@ -29,6 +29,13 @@
  
  */
 
+/*
+ 
+ 本地未从服务器clone的代码去push到指定服务器目录下
+ 
+ 
+ */
+
 
 @interface BookCell : UITableViewCell
 {
