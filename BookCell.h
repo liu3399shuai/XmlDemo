@@ -22,6 +22,14 @@
  
  */
 
+/*
+ 
+ 
+ 客户端 clone完后 提交
+ 
+ */
+
+
 @interface BookCell : UITableViewCell
 {
 @private
