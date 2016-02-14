@@ -1,103 +1,74 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+---
+layout: page
+tagline:
+---
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+{% for post in paginator.posts %}
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Xmldemo by liu3399shuai</title>
-  </head>
+<article class="home">
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/liu3399shuai/XmlDemo">View on GitHub</a>
-    <div class="shell">
+  <span class="post-date">
+    {% assign d = post.date | date: "%d" | plus:'0' %}
+    {{ post.date | date: "%B" }}
+    {% case d %}
+    {% when 1 or 21 or 31 %}{{ d }}st,
+    {% when 2 or 22 %}{{ d }}nd,
+    {% when 3 or 23 %}{{ d }}rd,
+    {% else %}{{ d }}th,
+    {% endcase %}
+    {{ post.date | date: "%Y" }}
+  </span>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Xmldemo</h1>
-            <h2>xml xml</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+  <h2>
+    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+  </h2>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/liu3399shuai/XmlDemo/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/liu3399shuai/XmlDemo/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+  <div>
+    {% if post.fullview %}
+    {{ post.content }}
+    {% else %}
+    {% if post.shortinfo %}
+    {{ post.shortinfo }}
+    {% elsif post.description %}
+    {{ post.description }}
+    {% else %}
+    {{ post.excerpt }}
+    {% endif %}
+    {% endif %}
+  </div>
 
+</article>
+{% endfor %}
+<hr/>
 
-      <span class="banner-fix"></span>
+<ul class="pager"> 
 
+  {% if paginator.previous_page %}
+  <li class="previous">
+    {% if paginator.previous_page == 1 %}
+    <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
+    {% else %}
+    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
+    {% endif %}
+  </li>
+  {% else %}
+  <li class="previous disabled">
+    <a>&larr; Newer</a>
+  </li>
+  {% endif %}
+  
+  <li>
+    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  </li>
 
-      <section id="main_content">
-        <p>dfsdgdgdcgdfgd
-f
-s
-dg
-dfg
-df</p>
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
+  </li>
+  {% else %}
+  <li class="next disabled">
+    <a>Older &rarr;</a>        
+  </li>
+  {% endif %}
 
-<p>fhttp://opensource.apple.com/source/CF/CF-855.17/CFRunLoop.c：</p>
-
-<p><a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16-SW23">https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16-SW23</a></p>
-
-<p><a href="http://blog.ibireme.com/2015/05/18/runloop/">http://blog.ibireme.com/2015/05/18/runloop/</a></p>
-
-<p>runloop 是线程的基础设施，是线程的属性，有一定的监听的功能</p>
-
-<p>who : runloop
-mode : NSDefaultRunLoopMode  NSRunLoopCommonModes  NSEventTrackingRunLoopMode</p>
-
-<p>what :  An NSRunLoopobject processes input sources such as mouse and keyboard events from the window system,NSTimer events, NSPort objects, and NSConnection objects.</p>
-
-<p>why : Each NSThread object, including the application’s main thread, has an NSRunLoop object automatically created for it as needed. If you need to access the current thread’s run loop, you do so with the class method currentRunLoop.</p>
-
-<p>how : do{}while()</p>
-
-<p>例子 : 定时器add到defaultMode上，scroll会导致mode切到trackingMode，这样定时器就暂停了
-NSURLConnection 下载的时候，要开启runLoop</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/liu3399shuai">liu3399shuai</a> can be found on <a href="https://github.com/liu3399shuai/XmlDemo">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("sdfsdf");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
-</html>
+</ul>
