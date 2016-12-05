@@ -5,6 +5,7 @@
 //  Created by mac on 12-12-11.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
+// master commit1
 
 #import <Foundation/Foundation.h>
 
