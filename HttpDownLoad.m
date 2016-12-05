@@ -5,7 +5,7 @@
 //  Created by mac on 12-12-10.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
-
+// merge 5 commit1
 #import "HttpDownLoad.h"
 
 @implementation HttpDownLoad
