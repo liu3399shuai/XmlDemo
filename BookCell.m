@@ -9,10 +9,6 @@
 #import "BookCell.h"
 #import "UIImageView+WebCache.h"
 
-
-//////
-
-
 @implementation BookCell
 
 @synthesize  userLable,realLable,creadLable,uidLable,headImgview;
