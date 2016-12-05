@@ -1,10 +1,4 @@
-//
-//  RootViewController.h
-//  XmlDemo
-//
-//  Created by mac on 12-12-11.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
-//
+// 测试pull request在有conflict时候的情况
 
 #import <UIKit/UIKit.h>
 #import "HttpDownLoad.h"
