@@ -1,10 +1,5 @@
 //
-//  HttpDownLoad.h
-//  JsomDemo
-//
-//  Created by mac on 12-12-10.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
-//
+//  测试，加上一些注释， 制造conflict，试试merge to master
 
 #import <Foundation/Foundation.h>
 #import "HttpDownLoadDelegate.h"
