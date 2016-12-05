@@ -1,5 +1,4 @@
 
-// branch merge6 commit2
 
 #import "UserItem.h"
 
