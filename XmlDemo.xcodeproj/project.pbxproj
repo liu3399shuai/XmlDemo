@@ -21,7 +21,6 @@
 		047200DE1676CB3A009854B1 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047200DD1676CB3A009854B1 /* RootViewController.m */; };
 		047200E11676CB86009854B1 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 047200E01676CB86009854B1 /* GDataXMLNode.m */; };
 		047200E51676CBB5009854B1 /* HttpDownLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 047200E31676CBB5009854B1 /* HttpDownLoad.m */; };
-		047200E71676CFD8009854B1 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 047200E61676CFD8009854B1 /* libxml2.dylib */; };
 		047201481676E730009854B1 /* UserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 047201471676E730009854B1 /* UserItem.m */; };
 		0472014B1676F7F1009854B1 /* BookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472014A1676F7F1009854B1 /* BookCell.m */; };
 		0472014D1676F7FF009854B1 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0472014C1676F7FF009854B1 /* BookCell.xib */; };
@@ -83,7 +82,6 @@
 		047200E21676CBB5009854B1 /* HttpDownLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpDownLoad.h; sourceTree = "<group>"; };
 		047200E31676CBB5009854B1 /* HttpDownLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpDownLoad.m; sourceTree = "<group>"; };
 		047200E41676CBB5009854B1 /* HttpDownLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpDownLoadDelegate.h; sourceTree = "<group>"; };
-		047200E61676CFD8009854B1 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		047201461676E730009854B1 /* UserItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserItem.h; sourceTree = "<group>"; };
 		047201471676E730009854B1 /* UserItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserItem.m; sourceTree = "<group>"; };
 		047201491676F7F1009854B1 /* BookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCell.h; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04747A4D16771CF5000BC78B /* QuartzCore.framework in Frameworks */,
-				047200E71676CFD8009854B1 /* libxml2.dylib in Frameworks */,
 				047200AE1676CB10009854B1 /* UIKit.framework in Frameworks */,
 				047200B01676CB10009854B1 /* Foundation.framework in Frameworks */,
 				047200B21676CB10009854B1 /* CoreGraphics.framework in Frameworks */,
@@ -160,7 +157,6 @@
 				0473C084167DEF9E006C9DF5 /* SDWebImage */,
 				0473C06D167DEEE9006C9DF5 /* EGOTableViewPullRefresh */,
 				04747A4C16771CF5000BC78B /* QuartzCore.framework */,
-				047200E61676CFD8009854B1 /* libxml2.dylib */,
 				047200E21676CBB5009854B1 /* HttpDownLoad.h */,
 				047200E31676CBB5009854B1 /* HttpDownLoad.m */,
 				047200E41676CBB5009854B1 /* HttpDownLoadDelegate.h */,

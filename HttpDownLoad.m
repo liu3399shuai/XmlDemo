@@ -20,7 +20,6 @@
         if (!mData) {
             mData = [[NSMutableData alloc] initWithCapacity:0];
         }
-        
     }
     return self;
 }
