@@ -1,4 +1,4 @@
-// 整理 master  和 branch
+// 没有conflict，直接merge to master试试
 
 #import <Foundation/Foundation.h>
 #import "HttpDownLoadDelegate.h"
