@@ -1,5 +1,4 @@
-//
-//  测试，加上一些注释， 制造conflict，试试merge to master
+// 整理 master  和 branch
 
 #import <Foundation/Foundation.h>
 #import "HttpDownLoadDelegate.h"
