@@ -7,6 +7,8 @@
 //
 // branch merge6 commit1
 
+// master commit
+
 #import <Foundation/Foundation.h>
 
 @interface UserItem : NSObject
