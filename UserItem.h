@@ -6,6 +6,8 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
+// master commit
+
 #import <Foundation/Foundation.h>
 
 @interface UserItem : NSObject
